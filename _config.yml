@@ -1,0 +1,48 @@
+# Site
+name: 'Converged Computing CiSE Special Issue 2024'
+description: 'Special Edition Magic the Gathering Cards'
+baseurl: /cise-special-issue
+
+logo: assets/images/logo-circle-small.png
+favicon: assets/images/favicon.ico
+avatar: assets/images/logo-circle.png
+disqus: 'demowebsite'
+email: cise5-24@computer.org
+cfp: https://www.computer.org/digital-library/magazines/cs/cfp-converged-computing
+
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+ 
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      
+  # all pages
+  - scope:
+      path: "pages"
+    values:
+      layout: page
+      
+      
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Pagination
+paginate: 20
+
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
