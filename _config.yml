@@ -6,7 +6,7 @@ baseurl: /cise-special-issue
 logo: assets/images/logo-circle-small.png
 favicon: assets/images/favicon.ico
 avatar: assets/images/logo-circle.png
-disqus: 'demowebsite'
+# disqus: 'demowebsite'
 email: cise5-24@computer.org
 cfp: https://www.computer.org/digital-library/magazines/cs/cfp-converged-computing
 
